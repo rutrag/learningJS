@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.fs-small {
+  font-size: 0.9rem;
+}
+
+body {
+  background: gray;
+  color: wheat;
+}
+
+.container {
+  margin: 1em;
+}
+
+.block {
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.header {
+  background-color: rgb(110, 110, 110);
+  color: wheat;
+  text-align: center;
+  padding: 1em;
+}
+
+.heading {
+  text-shadow: 0.1em 0.1em 0.2em #000;
+  letter-spacing: 0.1em;
+  text-align: left;
+  margin-left: 10%;
+}
+.heading .thin {
+  font-weight: lighter;
+}
+
+.describe {
+  display: flex;
+  flex-direction: column;
+  background: rgba(222, 167, 59, 0.386);
+  border-radius: 1em;
+  padding: 1em;
+}
+.describe__heading {
+  margin-bottom: 0.5em;
+}
+.describe__subheading {
+  margin-bottom: 0.5em;
+}
+
+/*
+h2 {
+	line-height: 0;
+	margin: 1.1em 0 0.2em;
+	padding: 0;
+	text-align: center;
+}
+.subheading{
+	margin: 1em;
+}
+*/
+.describetext {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+  line-height: 1.8;
+}
+.describetext__column {
+  display: flex;
+  flex-direction: column;
+  background: rgba(124, 120, 90, 0.386);
+  border-radius: 0.4em;
+  padding: 0.3em;
+}
+.describetext__block {
+  display: flex;
+  gap: 2em;
+  justify-content: space-between;
+}
+.describetext label {
+  align-self: center;
+}
+.describetext input {
+  align-self: center;
+  font-size: 1.1em;
+  background: rgb(173, 155, 125);
+  border: none;
+  border-radius: 0.3rem;
+  box-shadow: -0.2rem -0.2rem 0.1rem -0.1rem rgb(73, 67, 54) inset;
+  height: 2rem;
+  width: 10rem;
+  padding: 0.5rem;
+  color: white;
+}
+
+.block__operators {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.3em;
+  margin-bottom: 1em;
+}
+
+.text {
+  color: wheat;
+  text-shadow: 1px 1px 5px #000;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+.text-highlight {
+  text-shadow: 0 0 0.6em rgb(188, 170, 139);
+}
+
+.bold {
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  font-size: 1.2em;
+}
+
+.button {
+  min-width: 6em;
+  margin: 1em;
+  padding: 0.5em 0;
+  border-radius: 5em;
+  border: none;
+  box-shadow: 0 0 0.4em black;
+  color: wheat;
+  text-shadow: 0 0 0.3em #000;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  background-color: #a1834a;
+}
+.button:hover {
+  background: #ad915c;
+}
+.button:active {
+  box-shadow: 0 0 0.2em black;
+  border: none;
+}
