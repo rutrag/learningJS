@@ -115,7 +115,7 @@ console.log("converted", string, typeof string);
 console.log("converted", number, typeof number);
 console.log("converted", boolean, typeof boolean);
 
-// --------------	Curcamference calculator		--------------------------------
+// --------------	Curcamference calculator		---------------------------------
 
 const pi = 3.14159;
 let radius;
@@ -124,10 +124,9 @@ let curc_result;
 document.getElementById("circalcbutton").onclick = function(){
 	radius = document.getElementById("radius").value;
 	curc_result = 2 * pi * radius;
-	document.getElementById("circumference").innerHT
-	ML = "circumference: " + curc_result;
+	document.getElementById("circumference").innerHTML = "circumference: " + curc_result;
 }
-
+//	------------------------------------------------------------------------------
 
 // Math
 
@@ -143,7 +142,7 @@ x = Math.round(x);
 y = Math.round(y);
 z = Math.round(z);  
 
-console.log("| Math.round(x) = ", x, "| y =", y, "| z =", z, "|");
+console.log("| Math.round(x) = ", x, "| y = ", y, "| z = ", z, "|");
 
 x = 3.14;
 y = 5;
@@ -153,7 +152,7 @@ x = Math.floor(x);
 y = Math.floor(y);
 z = Math.floor(z);
 
-console.log("| Math.floor(x) = ", x, "| y =", y, "| z =", z, "|");
+console.log("| Math.floor(x) = ", x, "| y = ", y, "| z = ", z, "|");
 
 x = 3.14;
 y = 5;
@@ -163,4 +162,61 @@ x = Math.ceil(x);
 y = Math.ceil(y);
 z = Math.ceil(z);
 
-console.log("| Math.ceil(x) = ", x, "| y =", y, "| z =", z, "|");
+console.log("| Math.ceil(x) = ", x, "| y =", y, "| z = ", z, "|");
+
+x = 3.14;
+y = 5;
+z = -16.61;
+
+x = Math.pow(x, y);
+y = Math.pow(y);
+z = Math.pow(z, 2);
+
+console.log("Ex. Math.pow(x, y) = x^y");
+console.log("x = Math.pow(x, y) = ", x, "| y = ", y, "| (z, 2) = ", z, "|" )
+
+x = 3.14;
+y = 5;
+z = -16.61;
+
+x = Math.sqrt(x);
+y = Math.sqrt(y);
+z = Math.sqrt(z);
+
+console.log("Math.sqrt(x) = ", x, "| y = ", y, "| z = ", z, "|");
+
+x = 3.14;
+y = 5;
+z = -16.61;
+
+x = Math.abs(x);
+y = Math.abs(y);
+z = Math.abs(z);
+
+console.log("Math.abs(x) = ", x, "| y = ", y, "| z = ", z, "|");
+
+x = 3.14;
+y = 5;
+z = -16.61;
+
+x = Math.abs(x - z);
+y = Math.abs(y - 20);
+z = Math.abs(z);
+
+console.log("Math.abs(x) = ", x, "| y = ", y, "| z = ", z, "|");
+
+x = 3.14;
+y = 5;
+z = -16.61;
+
+let maximum;
+let minimum;
+
+maximum = Math.max(x, y, z);
+minimum = Math.min(x, y, z);
+
+console.log("Math.max(x, y, z) = ", maximum, "| Math.min(x, y, z) = ", minimum);
+
+x = Math.PI;
+
+console.log("Math.PI = ", x);
