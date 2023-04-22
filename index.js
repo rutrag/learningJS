@@ -33,7 +33,7 @@ let students = 10;
 let extrastudents = students % 3; //  modules
 
 /*
-- - - -			Augmented assigment operator: " (operatop)= "		- - - - - - -
+------------	Augmented assigment operator: " (operatop)= "	------------------
 
 "students = students / 3;"		is the same like 		"students /= 3"
 */
@@ -115,7 +115,8 @@ console.log("converted", string, typeof string);
 console.log("converted", number, typeof number);
 console.log("converted", boolean, typeof boolean);
 
-// --------------	Curcamference calculator		---------------------------------
+
+// -----------------	Curcamference calculator	---------------------------------
 
 const pi = 3.14159;
 let radius;
@@ -126,9 +127,9 @@ document.getElementById("circalcbutton").onclick = function(){
 	curc_result = 2 * pi * radius;
 	document.getElementById("circumference").innerHTML = "circumference: " + curc_result;
 }
-//	------------------------------------------------------------------------------
 
-// Math
+
+//	--------------------	Math functions	------------------------------------------
 
 let x;
 x = 3.14;
@@ -220,3 +221,16 @@ console.log("Math.max(x, y, z) = ", maximum, "| Math.min(x, y, z) = ", minimum);
 x = Math.PI;
 
 console.log("Math.PI = ", x);
+
+//	-----------------------	Pifagor's calculator	---------------------------------
+
+let a;
+let b;
+let c;
+
+a = 3;
+b = 4;
+
+c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2))
+
+console.log("angle of c = ", c)
