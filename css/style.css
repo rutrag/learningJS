@@ -4,8 +4,16 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+}
+
 .fs-small {
-  font-size: 0.9rem;
+  font-size: 0.9em;
+}
+
+.fs-big {
+  font-size: 1.5em;
 }
 
 body {
@@ -14,11 +22,11 @@ body {
 }
 
 .container {
-  margin: 1em;
+  margin: 1rem;
 }
 
 .block {
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
@@ -30,8 +38,8 @@ body {
 }
 
 .heading {
-  text-shadow: 0.1em 0.1em 0.2em #000;
-  letter-spacing: 0.1em;
+  text-shadow: 0.1rem 0.1rem 0.2rem #000;
+  letter-spacing: 0.1rem;
   text-align: left;
   margin-left: 10%;
 }
@@ -41,16 +49,16 @@ body {
 
 .describe {
   display: flex;
+  gap: 0.5rem;
   flex-direction: column;
   background: rgba(222, 167, 59, 0.386);
-  border-radius: 1em;
-  padding: 1em;
+  border-radius: 1rem;
+  padding: 1rem;
 }
-.describe__heading {
-  margin-bottom: 0.5em;
-}
-.describe__subheading {
-  margin-bottom: 0.5em;
+.describe__operators {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.3em;
 }
 
 /*
@@ -68,42 +76,54 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 0.5em;
-  line-height: 1.8;
+  gap: 1rem;
 }
 .describetext__column {
+  flex-grow: 1;
   display: flex;
+  gap: 0.5rem;
   flex-direction: column;
   background: rgba(124, 120, 90, 0.386);
-  border-radius: 0.4em;
-  padding: 0.3em;
+  border-radius: 0.4rem;
+  align-items: center;
+  padding: 0.3rem;
+}
+.describetext__column-ais {
+  align-items: start;
 }
 .describetext__block {
+  padding: 0.5rem;
   display: flex;
   gap: 2em;
   justify-content: space-between;
 }
+.describetext__block-mw100 {
+  min-width: 100%;
+}
 .describetext label {
   align-self: center;
 }
-.describetext input {
+.describetext .input {
   align-self: center;
   font-size: 1.1em;
   background: rgb(173, 155, 125);
   border: none;
   border-radius: 0.3rem;
   box-shadow: -0.2rem -0.2rem 0.1rem -0.1rem rgb(73, 67, 54) inset;
-  height: 2rem;
-  width: 10rem;
+  height: 1.5rem;
   padding: 0.5rem;
-  color: white;
+  color: rgb(108, 74, 17);
 }
-
-.block__operators {
-  display: flex;
-  justify-content: space-between;
-  gap: 0.3em;
-  margin-bottom: 1em;
+.describetext .input:active, .describetext .input:focus {
+  background: rgb(209, 194, 169);
+  outline: none;
+}
+.describetext .input-word {
+  width: 10rem;
+  letter-spacing: 0.1rem;
+}
+.describetext .input-number {
+  width: 3.2rem;
 }
 
 .text {
@@ -114,32 +134,30 @@ h2 {
 }
 
 .text-highlight {
-  text-shadow: 0 0 0.6em rgb(188, 170, 139);
+  text-shadow: 0 0 0.6rem rgb(188, 170, 139);
 }
 
 .bold {
   font-weight: bold;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.15rem;
   font-size: 1.2em;
 }
 
 .button {
-  min-width: 6em;
-  margin: 1em;
-  padding: 0.5em 0;
-  border-radius: 5em;
+  padding: 0.4rem 1rem;
+  border-radius: 5rem;
   border: none;
-  box-shadow: 0 0 0.4em black;
+  box-shadow: 0 0 0.4rem black;
   color: wheat;
-  text-shadow: 0 0 0.3em #000;
+  text-shadow: 0 0 0.3rem #000;
   font-weight: bold;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.08rem;
   background-color: #a1834a;
 }
 .button:hover {
   background: #ad915c;
 }
 .button:active {
-  box-shadow: 0 0 0.2em black;
+  box-shadow: 0 0 0.2rem black;
   border: none;
 }
