@@ -125,9 +125,8 @@ let curc_result;
 document.getElementById("circalcbutton").onclick = function(){
 	radius = document.getElementById("radius").value;
 	curc_result = 2 * pi * radius;
-	document.getElementById("circumference").innerHTML = "circumference: " + curc_result;
+	document.getElementById("circumference").innerHTML = curc_result;
 }
-
 
 //	--------------------	Math functions	------------------------------------------
 
@@ -228,9 +227,12 @@ let a;
 let b;
 let c;
 
-a = 3;
-b = 4;
+document.getElementById("pifagorbutton").onclick = function(){
+	a = document.getElementById("sidea").value;
+	b = document.getElementById("sideb").value;
+	c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+	document.getElementById("sidec").innerHTML = c;
+}
 
-c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2))
-
-console.log("angle of c = ", c)
+	/*c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2))
+	console.log("angle of c = ", c)*/
