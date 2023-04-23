@@ -20,7 +20,7 @@
 				<h2 class="describe__heading">1 step: <span class="thin">let</span></h2>
 				<h2 class="describe__heading">2 step :<span class="thin">document.getElementById</span></h2>
 					<div class="describetext">
-						<div class="describetext__column">
+						<div class="describetext__column describetext__column-ais">
 							<div class="describetext__block">
 								<p class="text">let firstname = <span class="bold">"kitty"</span></p>
 								<strong class="text text-highlight"> "" for text</strong>
@@ -32,7 +32,7 @@
 						</div>
 					</div>
 					<div class="describetext">
-						<div class="describetext__column">
+						<div class="describetext__column describetext__column-ais">
 							<div class="describetext__block">
 								<p class="text">let age = <span class="bold">17</span></p>
 								<strong class="text text-highlight">no "" for number</strong>
@@ -44,7 +44,7 @@
 						</div>
 					</div>
 					<div class="describetext">
-						<div class="describetext__column">
+						<div class="describetext__column describetext__column-ais">
 							<div class="describetext__block">
 								<p class="text">let firstname = <span class="bold">"kitty"</span></p>
 								<strong class="text text-highlight">true or false</strong>
@@ -60,7 +60,7 @@
 			<div class="block">
 				<div class="describe">
 					<h2 class="describe__heading">Operators</h2>
-					<div class="block__operators">
+					<div class="describe__operators">
 						<p class="describetext__column text">+ plus (addition sign)</p>
 						<p class="describetext__column text">* times (multiplication)</p>
 						<p class="describetext__column text">/ divided by (division)</p>
@@ -69,24 +69,24 @@
 					</div>
 					<h3 class="describe__subheading">let students = 10</h3>
 					<div class="describetext">
-						<div class="describetext__column">
-							<div class="describetext__block">
+						<div class="describetext__column describetext__column-ais">
+							<div class="describetext__block describetext__block-mw100">
 								<p class="text">JS code</p>
 								<p class="text text-highlight fs-small">getElementById(your id).innerHTML = "students =", students / 3;</p>
 							</div>
-							<div class="describetext__block">
+							<div class="describetext__block describetext__block-mw100">
 								<p class="text">result</p>
 								<p class="text text-highlight" id="students1"></p>
 							</div>
 						</div>
 					</div>
 					<div class="describetext">
-						<div class="describetext__column">
-							<div class="describetext__block">
+						<div class="describetext__column describetext__column-ais">
+							<div class="describetext__block describetext__block-mw100">
 								<p class="text">JS code</p>
 								<p class="text text-highlight text fs-small">getElementById(your id).innerHTML = "extra = ", extrastudents % 3</p>
 							</div>
-							<div class="describetext__block">
+							<div class="describetext__block describetext__block-mw100">
 								<p class="text">result</p>
 								<p class="text text-highlight" id="students2"></p>
 							</div>
@@ -96,7 +96,7 @@
 			</div>
 			<div class="block">
 				<div class="describe">
-					<h2 class="subheading">Augmented assignment operator</h2>
+					<h2 class="describe__heading">Augmented assignment operator</h2>
 					<div class="describetext">
 						<div class="describetext__column">
 							<p class="text">girl = girl + 2</p>
@@ -118,7 +118,7 @@
 			</div>
 			<div class="block">
 				<div class="describe">
-					<h2 class="subheading">instead of console log</h2>
+					<h2 class="describe__heading">instead of console log</h2>
 					<div class="describetext__column">
 						<p class="text" id="result">girl = girl + 2</p>
 					</div>
@@ -126,7 +126,7 @@
 			</div>
 			<div class="block">
 				<div class="describe">
-					<h2 class="subheading">Augmented assignment operator</h2>
+					<h2 class="describe__heading">Augmented assignment operator</h2>
 					<div class="describetext">
 						<div class="describetext__column">
 							<p class="text">girl = girl + 2</p>
@@ -148,11 +148,11 @@
 			</div>
 			<div class="block">
 				<div class="describe">
-					<h2 class="subheading">prompt</h2>
+					<h2 class="describe__heading">prompt</h2>
 					<div class="describetext">
 						<div class="describetext__column">
-							<label for="username">Enter your name</label>
-							<input type="text" id="username">
+							<label  for="username">Enter your name</label>
+							<input class="input input-word" type="text" id="username">
 							<button class="button" type="button" id="userbutton">Enter</button>
 						</div>
 						<div class="describetext__column">
@@ -164,19 +164,47 @@
 					</div>
 				</div>
 			</div>
+			<!-------	curcamference calculator	------->
 			<div class="block">
 				<div class="describe">
-					<h2 class="subheading">curcamference calculator</h2>
+					<h2 class="describe__heading">curcamference calculator</h2>
 					<div class="describetext">
 						<div class="describetext__column">
 							<div class="describetext__block">
 								<label for="radius">Radius</label>
-								<input type="number" id="radius">
+								<input class="input input-number" type="number" id="radius">
 								<button class="button" type="button" id="circalcbutton">Enter</button>
 							</div>
 						</div>
 						<div class="describetext__column">
-							<p class="text texthilight" id="circumference">Your name</p>
+							<p class="text texthilight" id="circumference">result</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-------	Pifagor's calculator		------->
+			<div class="block">
+				<div class="describe">
+					<h2 class="describe__heading">Pifagor's calculator</h2>
+					<div class="describetext">
+						<div class="img">
+							<img src="img/triangle.png" alt="">
+						</div>
+						<div class="describetext__column">
+							<div class="describetext__block">
+								<label for="sidea">a</label>
+								<input class="input input-number" type="number" id="sidea">
+							</div>
+							<div class="describetext__block">
+								<label for="radius">b</label>
+								<input class="input input-number" type="number" id="sidea">
+							</div>
+							<div class="describetext__block">
+								<button class="button" type="button" id="pifagorbutton">Enter</button>
+							</div>
+						</div>
+						<div class="describetext__column">
+							<p class="text texthilight fs-big" id="circumference">c</p>
 						</div>
 					</div>
 				</div>
