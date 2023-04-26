@@ -307,3 +307,15 @@ fullName.replaceAll(" ", "-"), "|");
 fullName.slice(0, fullName.indexOf(" ")));
 							console.log("lstName = fullName.slice(fullName.lastIndexOf(' ') + 1);", lstName = 
 fullName.slice(fullName.lastIndexOf(" ") + 1));
+
+
+//							Chaining metod 	=		calling one metod after another
+let hi = "hi there";
+							console.log("hi = ", hi);
+console.log(
+	hi.slice(
+		hi.charAt(0), hi.indexOf(" ")
+	).replace(
+		hi.charAt(0), hi.charAt(0).toUpperCase()
+		)
+);
