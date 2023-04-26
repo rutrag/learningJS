@@ -6,14 +6,23 @@
 img {
 	max-width: 100%;
 }
-
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 // -------------UTILITY classies-------------------
 
 .fs-small {
 	font-size: 0.9em;
 }
 .fs-big {
-	font-size: 1.5em;
+	font-size: 1.3em;
 }
 
 // This text needs
@@ -26,7 +35,7 @@ body {
 	margin:  1rem
 }
 .block {
-	margin-bottom: 2rem;
+	margin-bottom: 2em;
 	text-align: center;
 }
 .header {
@@ -36,8 +45,8 @@ body {
 	padding: 1em;
 }
 .heading {
-	text-shadow: 0.1rem 0.1rem 0.2rem #000;
-	letter-spacing: 0.1rem;
+	text-shadow: 0.1em 0.1em 0.2em #000;
+	letter-spacing: 0.1em;
 	text-align: left;
 	margin-left: 10%;
 	.thin{
@@ -49,13 +58,13 @@ body {
 	gap: 0.5rem;
 	flex-direction: column;
 	background: rgba(222, 167, 59, 0.386);
-	border-radius: 1rem;
+	border-radius: rem;
 	padding: 1rem;
 	&__heading {
 	}
 	&__subheading {
 	}
-	&__operators{
+	&__operators {
 		display: flex;
 		justify-content: space-between;
 		gap: 0.3em;
@@ -69,7 +78,7 @@ h2 {
 	padding: 0;
 	text-align: center;
 }
-.subheading{
+.subheading {
 	margin: 1em;
 }
 */
@@ -78,24 +87,23 @@ h2 {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 1rem;
+	gap: 1em;
 	&__column {
 		flex-grow: 1;
 		display: flex;
-		gap: 0.5rem;
+		gap: 0.5em;
 		flex-direction: column;
 		background: rgba(124, 120, 90, 0.386);
-		border-radius: 0.4rem;
+		border-radius: 0.4em;
 		align-items: center;
 		padding: 0.3rem;
 	}
-	&__column-ais{
+	&__column-ais {
 		align-items: start;
 	}
 	&__block {
-		padding: 0.5rem;
 		display: flex;
-		gap: 2em;
+		gap: 2rem;
 		justify-content: space-between;
 	}
 	&__block-mw100 {
@@ -106,25 +114,64 @@ h2 {
 	}
 	.input {
 		align-self: center;
-		font-size: 1.1em;
 		background: rgb(173, 155, 125);
 		border: none;
-		border-radius: 0.3rem;
-		box-shadow: -0.2rem -0.2rem 0.1rem -0.1rem rgb(73, 67, 54) inset;
-		height: 1.5rem;
-		padding: 0.5rem;
-		color: rgb(108, 74, 17);
+		border-radius: 0.3em;
+		box-shadow: -0.2em -0.2em 0.1em -0.1em rgb(73, 67, 54) inset;
+		height: 1.5em;
+		padding: 0.5em;
+		color: #6c4a11;
 		&:active, &:focus {
 		background: rgb(209, 194, 169);
 			outline: none;
 		}
 	}
 	.input-word {
-		width: 10rem;
-		letter-spacing: 0.1rem;
+		width: 10em;
+		letter-spacing: 0.1em;
 	}
 	.input-number {
-		width: 3.2rem;
+		width: 2.6em;
+	}
+}
+.inputblock {
+	display: flex;
+	align-items: center;
+	font-size: 1.1rem;
+	position: relative;
+	padding-right: 1em;
+}
+.arrow {
+	position: absolute;
+	background: none;
+	right: 0;
+	border-radius: 20%;
+	border: none;
+	width: 0;
+	height: 0;
+	border-style: solid;
+}
+.arrow-up {
+	top: 0.125em;
+	border-width: 0 0.55em 0.55em 0.55em;
+	border-color: transparent transparent #93681f transparent;
+	&:hover{
+		border-color: transparent transparent #c8a35e transparent;
+	}
+	&:active{
+		border-color: transparent transparent #e6bc6d transparent;
+	}
+}
+.arrow-down {
+	bottom: 0.125em;
+	border-style: solid;
+	border-width: 0.55em 0.55em 0 0.55em;
+	border-color: #93681f transparent transparent transparent;
+	&:hover{
+		border-color: #c8a35e transparent transparent transparent;
+	}
+	&:active{
+		border-color: #e6bc6d transparent transparent transparent;
 	}
 }
 .text {
@@ -139,24 +186,25 @@ h2 {
 }
 .bold {
 	font-weight: bold;
-	letter-spacing: 0.15rem;
+	letter-spacing: 0.15em;
 	font-size: 1.2em;
 }
 .button {
-	padding: 0.4rem 1rem;
-	border-radius: 5rem;
+	font-size: 0.7rem;
+	padding: 0.4em 1em;
+	border-radius: 5em;
 	border: none;
-	box-shadow: 0 0 0.4rem black;
+	box-shadow: 0 0 0.4em black;
 	color: wheat;
-	text-shadow: 0 0 0.3rem #000;
+	text-shadow: 0 0 0.3em #000;
 	font-weight: bold;
-	letter-spacing: 0.08rem;
+	letter-spacing: 0.08em;
 	background-color: #a1834a;
 	&:hover {
 		background: #ad915c;
 	}
 	&:active {
-	box-shadow: 0 0 0.2rem black;
+	box-shadow: 0 0 0.2em black;
 	border: none;
 	}
 }

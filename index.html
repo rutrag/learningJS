@@ -172,12 +172,19 @@
 						<div class="describetext__column">
 							<div class="describetext__block">
 								<label for="radius">Radius:</label>
-								<input class="input input-number" type="number" id="radius">
-								<button class="button" type="button" id="circalcbutton">Enter</button>
+									<input class="input input-number" type="number" id="radius">
+									<button class="button" type="button" id="circalcbutton">Enter</button>
 							</div>
 						</div>
 						<div class="describetext__column">
-							<p class="text texthilight" id="circumference">result</p>
+							<div class="describetext__block">
+								<p>Result:</p>
+								<div class="inputblock">
+									<p class="text" id="circumference"></p>
+									<button type="button" class="arrow arrow-up" id="arrowUpRadius"></button>
+									<button type="button" class="arrow arrow-down" id="arrowDownRadius"></button>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -191,23 +198,59 @@
 							<img src="img/triangle.png" alt="">
 						</div>
 						<div class="describetext__column">
-							<h4 id="sidec">Input a & b</h4>
+							<h4>Input a, b</h4>
 							<div class="describetext__block">
 								<label for="sidea">a:</label>
-								<input class="input input-number" type="number" id="sidea">
+									<input class="input input-number" type="number" id="sidea">
 							</div>
 							<div class="describetext__block">
 								<label for="radius">b:</label>
-								<input class="input input-number" type="number" id="sideb">
+									<input class="input input-number" type="number" id="sideb">
 							</div>
 							<div class="describetext__block">
 								<button class="button" type="button" id="pifagorbutton">Enter</button>
 							</div>
 						</div>
 						<div class="describetext__column">
-							<p class="text texthilight fs-big" id="sidec">c</p>
+							<div class="describetext__block">
+								<p>Result:</p>
+								<div class="inputblock">
+									<p class="text" id="sidec"></p>
+									<button type="button" class="arrow arrow-up" id="arrowUpPifagor"></button>
+									<button type="button" class="arrow arrow-down" id="arrowDownPifagor"></button>
+								</div>
+							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+			<div class="block">
+				<div class="describe">
+					<h2 class="desribe__heading">Random numbers</h2>
+					<div class="describetext">
+						<div class="describetext__column random">
+							<button class="button" id="randomBtn">click</button>
+						</div>
+						<div class="describetext__column random">
+							<div class="random__num">
+								<p class="text random__text" id="randomNum1"></p>
+							</div>
+						</div>
+						<div class="describetext__column random">
+							<div class="random__num">
+								<p class="text random__text" id="randomNum2"></p>
+							</div>
+						</div>
+						<div class="describetext__column random">
+							<div class="random__num">
+								<p class="text random__text" id="randomNum3"></p>
+							</div>
+						</div>
+						<div class="describetext__column random">
+							<div class="random__num">
+								<p class="text random__text" id="randomNum4">1</p>
+							</div>
+						</div>
 				</div>
 			</div>
 		</div>
