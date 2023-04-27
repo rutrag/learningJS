@@ -331,10 +331,11 @@ document.getElementById("CheckAgeBtn").onclick = function(){
 		document.getElementById("CheckAgeBtn").innerHTML = "lmao";
 		document.getElementById("CheckAgeLabel").innerHTML = "liar";
 	}
-	if(yo >= 55) {yo = "senior";}
-	if(yo >= 18) {yo = "adult";}
-	if(yo >= 12) {yo = "teenager";}
-	if(yo < 12)  {yo = "child";}
+	if(yo >= 55) 	{yo = "senior";}
+	else if(yo >= 18) 	{yo = "adult";}
+	else if(yo >= 12) 	{yo = "teenager";}
+	else if(yo < 0){yo = "You've not been born yet!";}
+	else				{yo = "child";}
 	document.getElementById("CheckAgeResult").innerHTML =
 	yo.replace(yo.charAt(0), "You're " + yo.charAt(0).toUpperCase())
 	.replace("B", "Bbb");
