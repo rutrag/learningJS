@@ -100,6 +100,9 @@ h2 {
   align-items: center;
   padding: 0.3rem;
 }
+.describetext__column-fg0 {
+  flex-grow: 0;
+}
 .describetext__column-ais {
   align-items: start;
 }

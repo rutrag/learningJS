@@ -98,6 +98,9 @@ h2 {
 		align-items: center;
 		padding: 0.3rem;
 	}
+	&__column-fg0{
+		flex-grow: 0;
+	}
 	&__column-ais {
 		align-items: start;
 	}
