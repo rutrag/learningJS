@@ -309,7 +309,7 @@ fullName.slice(0, fullName.indexOf(" ")));
 fullName.slice(fullName.lastIndexOf(" ") + 1));
 
 
-//							Chaining metod 	=		calling one metod after another
+//	------------------	Chaining metod		=	calling one metod after another	-----
 let hi = "hi there";
 							console.log("hi = ", hi);
 console.log(
@@ -319,3 +319,23 @@ console.log(
 		hi.charAt(0), hi.charAt(0).toUpperCase()
 		)
 );
+
+//	-----------------------	If, else statement	-----------------------------------
+
+let yo;
+
+document.getElementById("CheckAgeBtn").onclick = function(){
+	yo = Number(document.getElementById("CheckAge").value);
+	if(yo >= 150){
+		yo = "bullshitter"; 
+		document.getElementById("CheckAgeBtn").innerHTML = "lmao";
+		document.getElementById("CheckAgeLabel").innerHTML = "liar";
+	}
+	if(yo >= 55) {yo = "senior";}
+	if(yo >= 18) {yo = "adult";}
+	if(yo >= 12) {yo = "teenager";}
+	if(yo < 12)  {yo = "child";}
+	document.getElementById("CheckAgeResult").innerHTML =
+	yo.replace(yo.charAt(0), "You're " + yo.charAt(0).toUpperCase())
+	.replace("B", "Bbb");
+}
