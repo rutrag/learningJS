@@ -359,3 +359,44 @@ document.getElementById("genderBtn").onclick = function(){
 	}
 	else{genderResult.innerHTML = "You haven't agreed to Privacy Policy"};
 }
+
+/*	-----------------------	 			Switch		-----------------------------------
+---	statemanet that examines a value for a match aganst many case clauses	-----
+---					More efficient that many "else if" statement			------------*/
+
+let weather = Number(0);
+
+/*if(weather > 30){weather = "hot"}
+else if(weather > 20){weather = "warm"}
+else if(weather > 10){weather = "cool"}
+else if(weather > 5){weather = "chilly"}
+else if(weather > 0){weather = "cold"}
+else{weather = "freezing"}*/
+
+switch(true){ 
+	case weather > 30: weather = "hot";
+		break;
+	case weather > 20: weather = "warm";
+		break;
+	case weather > 10: weather = "cool";
+		break;
+	case weather > 5: weather = "chilly";
+		break;
+	case weather > 0: weather = "cold";
+		break;
+	default: weather = "freezing";
+}
+console.log(weather)
+
+let grade = "123A";
+
+switch(grade){
+	case "A": grade = "Great grade!"; break;
+	case "B": grade = "Good grade!"; break;
+	case "C": grade = "Ok grade"; break;
+	case "D": grade = "Passed grade!"; break;
+	case "F": grade = "Falled grade!"; break;
+	default: grade = grade + " isn't a letter grade";
+}
+
+console.log(grade)
