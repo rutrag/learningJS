@@ -260,10 +260,41 @@
 					<div class="describetext">
 						<div class="describetext__column describetext__column-fg0">
 							<div class="describetext__block">
-								<label for="CheckAge" id="CheckAgeLabel">Enter your age</label>
-								<input type="number" class="input input-number" id="CheckAge">
-								<button class="button" id="CheckAgeBtn">check</button>
-								<p class="text" id="CheckAgeResult"></p>
+								<label for="ageInput" id="ageLabel">Enter your age</label>
+								<input type="number" class="input input-number" id="ageInput">
+								<button class="button" id="ageBtn">check</button>
+								<p class="text" id="ageResult"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="block">
+				<div class="describe">
+					<h2 class="desribe__heading">Checked property</h2>
+					<div class="describetext">
+						<div class="describetext__column describetext__column-ais">
+							<div class="describetext__block gender">
+								<p class="text">Select your gender</p>
+								<div class="gender__block">
+									<label for="mlGenderInput">male</label>
+									<input type="radio" name="gender" class="checkbox" id="mlGenderInput">
+									<label for="fmlGenderInput">female</label>
+									<input type="radio" name="gender" class="checkbox" id="fmlGenderInput">
+									<label for="traGenderInput">trans</label>
+									<input type="radio" name="gender" class="checkbox" id="traGenderInput">
+								</div>
+							</div>
+							<div class="describetext__block gender">
+								<p class="text">You must agree to <a href="#">privacy policy</a></p>
+								<div class="gender__block">
+									<label for="agreeGender"> I agree</label>
+									<input type="checkbox" id="agreeGender">
+								</div>
+							</div>
+							<div class="describetext__block gender">
+								<button class="button" id="genderBtn">check</button>
+								<p class="text" id="genderResult"></p>
 							</div>
 						</div>
 					</div>

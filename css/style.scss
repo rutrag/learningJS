@@ -6,6 +6,10 @@
 img {
 	max-width: 100%;
 }
+a {
+	color: inherit;
+ }
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -210,4 +214,18 @@ h2 {
 	box-shadow: 0 0 0.2em black;
 	border: none;
 	}
+}
+.gender{
+	min-width: 100%;
+	gap: 1em;
+	align-items: start;
+	&__block{
+		display: flex;
+		gap: 0.3em;
+		background: #0000001b;
+		border-radius: 0.2em;
+		padding: 0 0.2em;
+	}
+}
+.checkbox{
 }

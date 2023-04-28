@@ -324,19 +324,38 @@ console.log(
 
 let yo;
 
-document.getElementById("CheckAgeBtn").onclick = function(){
-	yo = Number(document.getElementById("CheckAge").value);
+document.getElementById("ageBtn").onclick = function(){
+	yo = Number(document.getElementById("ageInput").value);
 	if(yo >= 150){
 		yo = "bullshitter"; 
-		document.getElementById("CheckAgeBtn").innerHTML = "lmao";
-		document.getElementById("CheckAgeLabel").innerHTML = "liar";
+		document.getElementById("ageBtn").innerHTML = "lmao";
+		document.getElementById("ageLabel").innerHTML = "liar";
 	}
-	if(yo >= 55) 	{yo = "senior";}
+	else if(yo >= 55) 	{yo = "senior";}
 	else if(yo >= 18) 	{yo = "adult";}
 	else if(yo >= 12) 	{yo = "teenager";}
-	else if(yo < 0){yo = "You've not been born yet!";}
-	else				{yo = "child";}
-	document.getElementById("CheckAgeResult").innerHTML =
+	else if(yo < 0)		{yo = "You haven't been born yet!";}
+	else						{yo = "child";}
+	document.getElementById("ageResult").innerHTML =
 	yo.replace(yo.charAt(0), "You're " + yo.charAt(0).toUpperCase())
-	.replace("B", "Bbb");
+	.replace("You're You", "You");
+}
+
+//	-----------------------		checked property	-----------------------------------
+
+let gender;
+
+document.getElementById("genderBtn").onclick = function(){
+	const genderResult = document.getElementById("genderResult");
+	const agreeGender = document.getElementById("agreeGender");
+	const traGender = document.getElementById("traGenderInput");
+	const mlGender  = document.getElementById("mlGenderInput");
+	const fmlGender = document.getElementById("fmlGenderInput");
+
+	if(agreeGender.checked){
+		if(traGender.checked)		{genderResult.innerHTML = "transexual";}
+		else if(mlGender.checked)	{genderResult.innerHTML = "male";}
+		else if(fmlGender.checked)	{genderResult.innerHTML = "female";}
+	}
+	else{genderResult.innerHTML = "You haven't agreed to Privacy Policy"};
 }
