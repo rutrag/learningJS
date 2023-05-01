@@ -398,5 +398,17 @@ switch(grade){
 	case "F": grade = "Falled grade!"; break;
 	default: grade = grade + " isn't a letter grade";
 }
-
 console.log(grade)
+
+//	------------	And (&&), Or (||) and Not (!) logical operators	-----------------
+
+let temp = 32;
+let sunny = false;
+
+	if	((temp >= 30 && sunny)||temp >= 33){
+		console.log("It's Hot!")}
+	else if (((temp > 0 && temp < 30) && sunny) ||((temp >= 30 && temp < 33) && !sunny)){
+		console.log("There is Cool weather!")}
+	else	{console.log("It'bad weather")};
+
+console.log(!sunny)	//Not (!) logical operator invert boolean function 
