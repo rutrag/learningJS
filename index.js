@@ -405,10 +405,18 @@ console.log(grade)
 let temp = 32;
 let sunny = false;
 
-	if	((temp >= 30 && sunny)||temp >= 33){
-		console.log("It's Hot!")}
-	else if (((temp > 0 && temp < 30) && sunny) ||((temp >= 30 && temp < 33) && !sunny)){
-		console.log("There is Cool weather!")}
-	else	{console.log("It'bad weather")};
+if	((temp >= 30 && sunny)||temp >= 33){
+	console.log("It's Hot!")}
+else if (((temp > 0 && temp < 30) && sunny) ||((temp >= 30 && temp < 33) && !sunny)){
+	console.log("There is Cool weather!")}
+else	{console.log("It'bad weather")};
 
 console.log(!sunny)	//Not (!) logical operator invert boolean function 
+
+
+//	------------------	While	loop	--------------------------------------------------
+//	---------	Repeat some code whie some condition is true potentially infinite	-----
+
+let someValue = "";
+
+//while(someValue == ""){console.log("someValue wasn.t change")} //leads to infinite loop
