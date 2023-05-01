@@ -398,7 +398,7 @@ switch(grade){
 	case "F": grade = "Falled grade!"; break;
 	default: grade = grade + " isn't a letter grade";
 }
-console.log(grade)
+console.log(grade)31
 
 //	------------	And (&&), Or (||) and Not (!) logical operators	-----------------
 
@@ -420,3 +420,8 @@ console.log(!sunny)	//Not (!) logical operator invert boolean function
 let someValue = "";
 
 //while(someValue == ""){console.log("someValue wasn.t change")} //leads to infinite loop
+
+let smValue = 23123;
+do{
+	smValue = window.prompt("Enter enything");
+}while(smValue == "");
