@@ -430,4 +430,15 @@ let loading = 0;
 
 while(loading < 100){
 	console.log("while(loading < 100){console.log();loading++;0}")
-	loading++;};
+	loading++;};	//++ the same as +1
+
+//	------------------	for	loop	--------------------------------------------------
+
+const waifus = ["Yor Forger", "Kitagawa Marin", "Hayase Nagatoro", "Tomo Aizawa", "Mikasa Ackerman", "Mahiru Shiina", "Akira Asai", "Orihime Inoue", "Himiko Toga", "Rukia Kuchiki"]
+
+for(waifu of waifus){
+	if(waifu === "Yor Forger"){
+		waifu = "The best waifu " + waifu;
+	}
+	console.log(waifu);
+}
