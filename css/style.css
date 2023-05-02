@@ -118,6 +118,15 @@ h2 {
 .describetext__block-mw100 {
   min-width: 100%;
 }
+.describetext__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.describetext__container .button {
+  transform: translateX(100%);
+}
 .describetext label {
   align-self: center;
 }
@@ -192,6 +201,10 @@ h2 {
   text-shadow: 1px 1px 5px #000;
   letter-spacing: 0.05em;
   text-align: left;
+}
+
+.text-rect {
+  line-height: 0.5em;
 }
 
 .text-highlight {

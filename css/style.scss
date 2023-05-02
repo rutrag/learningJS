@@ -102,7 +102,7 @@ h2 {
 		align-items: center;
 		padding: 0.3rem;
 	}
-	&__column-fg0{
+	&__column-fg0 {
 		flex-grow: 0;
 	}
 	&__column-ais {
@@ -115,6 +115,15 @@ h2 {
 	}
 	&__block-mw100 {
 		min-width: 100%;
+	}
+	&__container {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5em;
+		.button {
+			transform: translateX(100%);
+		}
 	}
 	label {
 		align-self: center;
@@ -187,6 +196,7 @@ h2 {
 	letter-spacing: 0.05em;
 	text-align: left;
 }
+.text-rect { line-height: 0.5em;}
 .text-highlight {
 
 	text-shadow: 0 0 0.6rem rgb(188, 170, 139);
