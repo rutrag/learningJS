@@ -458,3 +458,35 @@ for(let i = 1; i < 5; i+=1){
 	if(i == 3){break;}
 	console.log("break ", i)
 }
+
+//	------------------	break and continue	-----------------------------------------
+
+for(let i = 1; i < 5; i+=1){
+	if(i == 3){break;}
+	console.log("breaking", i+="a") 
+	for(let a = 2; a < 7; a+=2){
+		console.log(a += "b");
+	}
+}
+
+//	------------------	nested loop = a loop inside of another loop	-----------------
+
+let row;
+let column;
+
+document.getElementById("rectangleBtn").onclick = function(){
+	const recTextHtml = document.getElementById("rectangleText");
+	if(!(recTextHtml.innerHTML = "")){
+		recTextHtml.innerHTML = "";
+	}
+	row = document.getElementById("rectangleRowInput").value;
+	column = document.getElementById("rectangleColumnInput").value;
+	for(let i = 1; i <= row; i+=1){
+		for(let a = 1; a <= column; a+=1){
+			recTextHtml.innerHTML += "x";
+			console.log("x");
+		}
+		recTextHtml.innerHTML += "<br>";
+		console.log("1 ", i, a, row, column);
+	}
+}
