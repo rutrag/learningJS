@@ -33,7 +33,7 @@ let students = 10;
 let extrastudents = students % 3; //  modules
 
 /*
-------------	Augmented assigment operator: " (operatop)= "	------------------
+------------	Augmented assigment operator: " (operatop)= "	-----------------------
 
 "students = students / 3;"		is the same like 		"students /= 3"
 */
@@ -117,7 +117,7 @@ boolean = Boolean(boolean);
 
 
 
-// -----------------	Curcamference calculator	---------------------------------
+// -----------------	Curcamference calculator	--------------------------------------
 
 const pi = 3.14159;
 let radius;
@@ -129,7 +129,7 @@ document.getElementById("circalcbutton").onclick = function(){
 	document.getElementById("circumference").innerHTML = curc_result;
 }
 
-//	--------------------	Math functions	------------------------------------------
+//	--------------------	Math functions	-----------------------------------------------
 
 let x;
 x = 3.14;
@@ -222,7 +222,7 @@ x = Math.PI;
 
 							console.log("Math.PI = ", x);
 
-//	-----------------------	Pifagor's calculator	---------------------------------
+//	-----------------------	Pifagor's calculator	--------------------------------------
 
 let a;
 let b;
@@ -236,7 +236,7 @@ document.getElementById("pifagorbutton").onclick = function(){
 	document.getElementById("sidec").innerHTML = c;
 }
 
-//	-----------------------	Arrow to change input value	-----------------------
+//	-----------------------	Arrow to change input value	-----------------------------
 
 let count = 0;
 
@@ -278,7 +278,7 @@ document.getElementById("randomBtn").onclick = function(){
 	document.getElementById("randomNum4").innerHTML = random4;
 }
 
-//	-----------------------	Useful sting property and methods	--------------------
+//	-----------------------	Useful sting property and methods	-----------------------
 
 let fullName = "Gar   Team";
 let fstName;
@@ -309,7 +309,7 @@ fullName.slice(0, fullName.indexOf(" ")));
 fullName.slice(fullName.lastIndexOf(" ") + 1));
 
 
-//	------------------	Chaining metod		=	calling one metod after another	-----
+//	------------------	Chaining metod		=	calling one metod after another	--------
 let hi = "hi there";
 							console.log("hi = ", hi);
 console.log(
@@ -320,7 +320,7 @@ console.log(
 		)
 );
 
-//	-----------------------	If, else statement	-----------------------------------
+//	-----------------------	If, else statement	--------------------------------------
 
 let yo;
 
@@ -341,7 +341,7 @@ document.getElementById("ageBtn").onclick = function(){
 	.replace("You're You", "You");
 }
 
-//	-----------------------		checked property	-----------------------------------
+//	-----------------------		checked property	--------------------------------------
 
 let gender;
 
@@ -360,9 +360,9 @@ document.getElementById("genderBtn").onclick = function(){
 	else{genderResult.innerHTML = "You haven't agreed to Privacy Policy"};
 }
 
-/*	-----------------------	 			Switch		-----------------------------------
----	statemanet that examines a value for a match aganst many case clauses	-----
----					More efficient that many "else if" statement			------------*/
+/*	-----------------------	 			Switch		--------------------------------------
+---	statemanet that examines a value for a match aganst many case clauses	--------
+---					More efficient that many "else if" statement			---------------*/
 
 let weather = Number(0);
 
@@ -400,7 +400,7 @@ switch(grade){
 }
 console.log(grade)
 
-//	------------	And (&&), Or (||) and Not (!) logical operators	-----------------
+//	------------	And (&&), Or (||) and Not (!) logical operators	--------------------
 
 let temp = 32;
 let sunny = false;
@@ -430,15 +430,31 @@ let loading = 0;
 
 while(loading < 100){
 	console.log("while(loading < 100){console.log();loading++;0}")
-	loading++;};	//++ the same as +1
+	loading++;};	//++ is short of += 1
 
-//	------------------	for	loop	--------------------------------------------------
+//	-----------	For loop	- repeat some code a certain amount of times	-----------------
 
-const waifus = ["Yor Forger", "Kitagawa Marin", "Hayase Nagatoro", "Tomo Aizawa", "Mikasa Ackerman", "Mahiru Shiina", "Akira Asai", "Orihime Inoue", "Himiko Toga", "Rukia Kuchiki"]
+const waifus = ["Yor Forger", "Kitagawa Marin", "Hayase Nagatoro", "Tomo Aizawa", "Mikasa Ackerman", "Mahiru Shina", "Akira Asai", "Orihime Inoue", "Himiko Toga", "Rukia Kuchiki"]
 
 for(waifu of waifus){
 	if(waifu === "Yor Forger"){
 		waifu = "The best waifu " + waifu;
 	}
 	console.log(waifu);
+}
+
+for(let i = 7; i > - 2; i-=2){
+	console.log("variable of i by for(let i = 7; i > - 2; i-=2){console.log(i)}", i)
+}
+
+//	------------------	break and continue	-----------------------------------------
+
+for(let i = 1; i < 5; i+=1){
+	if(i == 3){continue;}
+	console.log("continue ", i)
+}
+
+for(let i = 1; i < 5; i+=1){
+	if(i == 3){break;}
+	console.log("break ", i)
 }
