@@ -471,22 +471,33 @@ for(let i = 1; i < 5; i+=1){
 
 //	------------------	nested loop = a loop inside of another loop	-----------------
 
-let row;
 let column;
+let row;
 
 document.getElementById("rectangleBtn").onclick = function(){
-	const recTextHtml = document.getElementById("rectangleText");
-	if(!(recTextHtml.innerHTML = "")){
-		recTextHtml.innerHTML = "";
+	const text = document.getElementById("rectangleText");
+	const rowInput = document.getElementById("rectangleRowInput");
+	let r = rowInput.value;
+	const columnInput = document.getElementById("rectangleColumnInput");
+	let c = columnInput.value;
+	if(!(text.innerHTML = "")){
+		text.innerHTML = "";
 	}
-	row = document.getElementById("rectangleRowInput").value;
-	column = document.getElementById("rectangleColumnInput").value;
+
+	row = r;
+	if(r < 0){r = 0}
+	else if(r > 40){r = 40}
+
+	column = c;
+	if(c < 0){c = 0}
+	else if(c > 40){c = 40}
+
 	for(let i = 1; i <= row; i+=1){
 		for(let a = 1; a <= column; a+=1){
-			recTextHtml.innerHTML += "x";
+			text.innerHTML += "x";
 			console.log("x");
 		}
-		recTextHtml.innerHTML += "<br>";
+		text.innerHTML += "<br>";
 		console.log("1 ", i, a, row, column);
 	}
 }
