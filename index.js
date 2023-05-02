@@ -398,18 +398,18 @@ switch(grade){
 	case "F": grade = "Falled grade!"; break;
 	default: grade = grade + " isn't a letter grade";
 }
-console.log(grade)31
+console.log(grade)
 
 //	------------	And (&&), Or (||) and Not (!) logical operators	-----------------
 
 let temp = 32;
 let sunny = false;
 
-if	((temp >= 30 && sunny)||temp >= 33){
+if((temp >= 30 && sunny)||temp >= 33){
 	console.log("It's Hot!")}
-else if (((temp > 0 && temp < 30) && sunny) ||((temp >= 30 && temp < 33) && !sunny)){
+else if(((temp > 0 && temp < 30) && sunny) ||((temp >= 30 && temp < 33) && !sunny)){
 	console.log("There is Cool weather!")}
-else	{console.log("It'bad weather")};
+else{console.log("It'bad weather")};
 
 console.log(!sunny)	//Not (!) logical operator invert boolean function 
 
@@ -417,11 +417,17 @@ console.log(!sunny)	//Not (!) logical operator invert boolean function
 //	------------------	While	loop	--------------------------------------------------
 //	---------	Repeat some code whie some condition is true potentially infinite	-----
 
-let someValue = "";
+//let someValue = "";
+//
+//while(someValue == ""){console.log("someValue wasn't changed")} //leads to infinite loop
+//
+//let smValue = 23123;
+//do{
+//	smValue = window.prompt("Enter enything exept '1'");
+//}while(smValue == "" || smValue == "1");
+//
+let loading = 0;
 
-//while(someValue == ""){console.log("someValue wasn.t change")} //leads to infinite loop
-
-let smValue = 23123;
-do{
-	smValue = window.prompt("Enter enything");
-}while(smValue == "");
+while(loading < 100){
+	console.log("while(loading < 100){console.log();loading++;0}")
+	loading++;};
