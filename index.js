@@ -531,18 +531,57 @@ function heroNameCons(a, b){
 	console.log("");
 }
 
-//	---	Return - returns a value back to the place where you invoked function	-----
+//	-Return statement - returns a value back to the place where you invoked function	--
 
-let width;
-let height;
-let area;
 
-area = getArea(a,b);
+let area = getArea(a,b);
 
 console.log(area);
 
 function getArea(width, height){
-	width = 2;
+	width = 4;
 	height = 3;
 	return width * height;
 }
+
+//	---------	Condition(ternary) operator - Shortcut for an if/else statement	-----
+//	---------	Syntax: condition ? expressoinIfTrue : expressionIfFalse	--------------
+
+let beverage;
+
+beverage = getBeverage(120);
+
+console.log(beverage);
+
+function getBeverage(adultAge){
+	return adultAge >= 18 ? beverage = "sidr" : beverage = "juice";
+}
+
+
+checkWinner(false);
+
+function checkWinner(win){
+	win ? console.log("You win!") : console.log("You Lose;")
+}
+
+//	---------------------------------	var vs let	-----------------------------------
+//	let - variables are limited to block scope {}
+//	var - variables are limited to a function(){}
+
+//	global variables is declared outside any function
+// but var will CHANGE browser's window properties instead of let
+// window properties can be seen in browser's console -> window
+
+for(let i = 33; i < 39; i+=2){
+	console.log("let into 'for{i}': ", i)
+}
+console.log("let out of 'for{}i': leads to undefined i");
+
+doSmth()
+function doSmth(){
+	for(var i = 33; i < 39; i+=2){
+		console.log("var into for'function(){for{i}}': ", i)
+	}
+	console.log("var into function 'funtion(){for{}i}': ", i);
+}
+console.log("var out of function'for{}i': leads to undefined i");
