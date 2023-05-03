@@ -67,21 +67,21 @@ let fullname = window.prompt("what's your name?");
 							console.log("fullname");
 */
 
-//	DIFFICULT WAY HTML textbox
+//-------------------------------	Prompt	-----------------------------------------
 
-let fullname;
-let ages;
+let flname;
+let yold;
 
 document.getElementById("userbutton").onclick = function(){
 
-	fullname = document.getElementById("fullname").value;
-								console.log("fullname");
-	document.getElementById("user").innerHTML = "Your name: " + fullname;
-	ages = window.prompt("How old are you?")
-	ages = Number(ages);
-	ages += 1;
-								console.log(typeof ages);
-	document.getElementById("ages").innerHTML = "Ages: " + ages;
+	flname = document.getElementById("username").value;
+								console.log("username");
+	document.getElementById("user").innerHTML = "Your name: " + flname;
+	yold = window.prompt("How old are you?")
+	yold = Number(yold);
+	yold += 1;
+								console.log(typeof yold);
+	document.getElementById("ages").innerHTML = "Ages: " + yold;
 }
 
 /*
@@ -500,4 +500,49 @@ document.getElementById("rectangleBtn").onclick = function(){
 		text.innerHTML += "<br>";
 		console.log("1 ", i, a, row, column);
 	}
+}
+
+//	------------------	Function - define code once and use it many times	-----------
+//	------------------	To perform some code, call the fuction name	-----------------
+
+heroName1();
+function heroName1(){
+	let fname = "Roxy";
+	let lname = "Migurdia";
+	heroNameCons(fname, lname);
+}
+
+heroName2();
+function heroName2(){
+	let fname = "Sylphiette";
+	let lname = "";
+	heroNameCons(fname, lname);
+}
+
+heroName3();
+function heroName3(){
+	let fname = "Eris";
+	let lname = "Boreas Greyrat";
+	heroNameCons(fname, lname);
+}
+
+function heroNameCons(a, b){
+	console.log("Name", a, b);
+	console.log("");
+}
+
+//	---	Return - returns a value back to the place where you invoked function	-----
+
+let width;
+let height;
+let area;
+
+area = getArea(a,b);
+
+console.log(area);
+
+function getArea(width, height){
+	width = 2;
+	height = 3;
+	return width * height;
 }
