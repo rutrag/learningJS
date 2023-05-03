@@ -585,3 +585,19 @@ function doSmth(){
 	console.log("var into function 'funtion(){for{}i}': ", i);
 }
 console.log("var out of function'for{}i': leads to undefined i");
+
+//	------	template literals(strings) - delimited with backtick (`)	-----------------
+//	------	allows embedded expressions and tagged templates ($)	--------------------
+
+let templName = "Honami Ichinose";
+let templAge = 18;
+let templCounrty = "Japan";
+
+let cardPerson;
+
+tempFunc(true);
+
+function tempFunc(girl){
+girl ? console.log(`Hi, ${templName}! You are ${templAge}years old from ${templCounrty}`) : console.log(`${templName}, you are not girl`)
+
+}
