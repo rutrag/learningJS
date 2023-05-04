@@ -599,5 +599,15 @@ tempFunc(true);
 
 function tempFunc(girl){
 girl ? console.log(`Hi, ${templName}! You are ${templAge}years old from ${templCounrty}`) : console.log(`${templName}, you are not girl`)
-
 }
+
+//	toLocaleString() method - returns a Date object as a string, using locale settings-
+//	------	Syntax: Date.toLocaleString(locales, options)	--------------------------
+
+let tlsNum = 1003454623;
+
+console.log(tlsNum.toLocaleString("en-US", {style: "currency", currency: "USD"}));
+console.log(tlsNum.toLocaleString("ru-Ru", {style: "currency", currency: "RUB"}));
+console.log(tlsNum.toLocaleString("ar-SA", {style: "currency", currency: "USD"}));
+console.log(tlsNum.toLocaleString("hi-IN", {style: "currency", currency: "USD"}));
+console.log(tlsNum.toLocaleString("zh-CN", {style: "currency", currency: "USD"}));
