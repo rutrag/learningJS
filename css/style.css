@@ -32,6 +32,14 @@ input[type=number] {
   font-size: 1.3em;
 }
 
+.mw100 {
+  min-width: 100%;
+}
+
+.maxw100 {
+  max-width: 100%;
+}
+
 body {
   background: gray;
   color: wheat;
@@ -112,11 +120,8 @@ h2 {
 }
 .describetext__block {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   justify-content: space-between;
-}
-.describetext__block-mw100 {
-  min-width: 100%;
 }
 .describetext__container {
   position: relative;
@@ -201,6 +206,14 @@ h2 {
   text-shadow: 1px 1px 5px #000;
   letter-spacing: 0.05em;
   text-align: left;
+}
+
+.output {
+  background: rgb(173, 155, 125);
+  border-radius: 0.3em;
+  box-shadow: -0.2em -0.2em 0.1em -0.1em rgb(73, 67, 54) inset;
+  padding: 0 0.5em;
+  color: #6c4a11;
 }
 
 .text-rect {

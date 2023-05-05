@@ -28,6 +28,12 @@ input[type=number] {
 .fs-big {
 	font-size: 1.3em;
 }
+.mw100 {
+	min-width: 100%;
+}
+.maxw100 {
+	max-width: 100%;
+}
 
 // This text needs
 
@@ -110,11 +116,8 @@ h2 {
 	}
 	&__block {
 		display: flex;
-		gap: 2rem;
+		gap: 1rem;
 		justify-content: space-between;
-	}
-	&__block-mw100 {
-		min-width: 100%;
 	}
 	&__container {
 		position: relative;
@@ -196,9 +199,15 @@ h2 {
 	letter-spacing: 0.05em;
 	text-align: left;
 }
+.output {
+	background: rgb(173, 155, 125);
+	border-radius: 0.3em;
+	box-shadow: -0.2em -0.2em 0.1em -0.1em rgb(73, 67, 54) inset;
+	padding: 0 0.5em;
+	color: #6c4a11;
+}
 .text-rect { line-height: 0.5em;}
 .text-highlight {
-
 	text-shadow: 0 0 0.6rem rgb(188, 170, 139);
 }
 .bold {

@@ -70,11 +70,11 @@
 					<h3 class="describe__subheading">let students = 10</h3>
 					<div class="describetext">
 						<div class="describetext__column describetext__column-ais">
-							<div class="describetext__block describetext__block-mw100">
+							<div class="describetext__block mw100">
 								<p class="text">JS code</p>
 								<p class="text text-highlight fs-small">getElementById(your id).innerHTML = "students =", students / 3;</p>
 							</div>
-							<div class="describetext__block describetext__block-mw100">
+							<div class="describetext__block mw100">
 								<p class="text">result</p>
 								<p class="text text-highlight" id="students1"></p>
 							</div>
@@ -82,11 +82,11 @@
 					</div>
 					<div class="describetext">
 						<div class="describetext__column describetext__column-ais">
-							<div class="describetext__block describetext__block-mw100">
+							<div class="describetext__block mw100">
 								<p class="text">JS code</p>
 								<p class="text text-highlight text fs-small">getElementById(your id).innerHTML = "extra = ", extrastudents % 3</p>
 							</div>
-							<div class="describetext__block describetext__block-mw100">
+							<div class="describetext__block mw100">
 								<p class="text">result</p>
 								<p class="text text-highlight" id="students2"></p>
 							</div>
@@ -199,7 +199,7 @@
 							<img src="img/triangle.png" alt="">
 						</div>
 						<div class="describetext__column">
-							<h4>Input a, b</h4>
+								<h4 class="mw100">Input a, b</h4>
 							<div class="describetext__block">
 								<label for="sidea">a:</label>
 									<input class="input input-number" type="number" id="sidea">
@@ -306,7 +306,7 @@
 					<h2 class="desribe__heading">Rectangle by letter "x"</h2>
 					<div class="describetext">
 						<div class="describetext__column describetext__column-ais">
-							<div class="describetext__block describetext__block-mw100">
+							<div class="describetext__block mw100">
 								<div class="describetext__container">
 									<div class="describetext__block">
 										<label for="rectangleColumnInput">Enter columns</label>
@@ -322,6 +322,48 @@
 								</div>
 								<div class="describetext__container">
 									<p class="text text-rect" id="rectangleText"></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="block">
+				<div class="describe">
+					<h2 class="desribe__heading">Number guessing game</h2>
+					<div class="describetext">
+						<div class="describetext__column describetext__column-ais">
+							<div class="describetext__block mw100">
+								<div class="describetext__container ggame">
+									<div class="describetext__block inputblock mw100">
+										<label for="ggInput">Your number</label>
+										<input type="number" class="input input-number" id="ggInput" placeholder="<10">
+										<button type="button" class="arrow arrow-up" id="arrowUpGg"></button>
+										<button type="button" class="arrow arrow-down" id="arrowDownGg"></button>
+									</div>
+									<div class="describetext__block">
+										<button class="button" id="ggBtn">enter</button>
+									</div>
+								</div>
+								<div class="describetext__container">
+									<div class="describetext__block">
+										<p>guess</p>
+										<p class="output" id="ggGuess">.</p>
+									</div>
+									<div class="describetext__block">
+										<p>reality: </p>
+										<p class="output" id="ggReality">.</p>
+									</div>
+								</div>
+								<div class="describetext__container">
+									<div class="describetext__block">
+										<label for="ggWin">win</label>
+										<p class="output" id="ggWin">0</p>
+									</div>
+									<div class="describetext__block">
+										<p>lose</p>
+										<p class="output" id="ggLose">0</p>
+									</div>
 								</div>
 							</div>
 						</div>

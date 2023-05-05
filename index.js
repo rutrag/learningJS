@@ -261,6 +261,8 @@ document.getElementById("arrowDownPifagor").onclick = function(){
 	document.getElementById("sidec").innerHTML = count;
 }
 
+//	------------------------	Random numbers	-----------------------------------------
+
 let random1;
 let random2;
 let random3;
@@ -469,7 +471,7 @@ for(let i = 1; i < 5; i+=1){
 	}
 }
 
-//	------------------	nested loop = a loop inside of another loop	-----------------
+//	----	Rectangle	--------	nested - a loop inside of another loop	-----------------
 
 let column;
 let row;
@@ -609,5 +611,29 @@ let tlsNum = 1003454623;
 console.log(tlsNum.toLocaleString("en-US", {style: "currency", currency: "USD"}));
 console.log(tlsNum.toLocaleString("ru-Ru", {style: "currency", currency: "RUB"}));
 console.log(tlsNum.toLocaleString("ar-SA", {style: "currency", currency: "USD"}));
-console.log(tlsNum.toLocaleString("hi-IN", {style: "currency", currency: "USD"}));
-console.log(tlsNum.toLocaleString("zh-CN", {style: "currency", currency: "USD"}));
+console.log(tlsNum.toLocaleString(undefined, {style: "percent"}));
+console.log(tlsNum.toLocaleString(undefined, {style: "unit", unit: "meter"}));
+
+//	------------------------	Number Guessing Game	-----------------------------------
+
+ggGuess.innerHTML = ggInput.value;
+document.getElementById("ggBtn").onclick = function(){
+	let answer = Math.floor(Math.random() * 9 + 1);
+	let ggReal = document.getElementById("ggReality");
+	ggReal.innerHTML = answer;
+	let ggGuess = document.getElementById("ggGuess");
+	let ggInput = document.getElementById("ggInput");
+	let ggWin = document.getElementById("ggWin");
+	let gw = Number(ggWin.innerHTML);
+	let ggLose = document.getElementById("ggLose");
+	let gl = Number(ggLose.innerHTML);
+	let giv = Number(ggInput.value);
+	ggGuess.innerHTML = ggInput.value;
+	if(answer > giv||answer < giv){
+		ggLose.innerHTML = gl + 1;
+		alert("You're guessed it")
+	}
+	else{
+		ggWin.innerHTML = gw + 1;
+	}
+}
