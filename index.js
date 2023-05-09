@@ -417,7 +417,7 @@ console.log(!sunny)	//Not (!) logical operator invert boolean function
 
 
 //	------------------	While	loop	--------------------------------------------------
-//	---------	Repeat some code whie some condition is true potentially infinite	-----
+//	---------	Repeat some code while some condition is true potentially infinite	-----
 
 //let someValue = "";
 //
@@ -536,7 +536,7 @@ function heroNameCons(a, b){
 //	-Return statement - returns a value back to the place where you invoked function	--
 
 
-let area = getArea(a,b);
+let area = getArea(a,b);  // getArea(wigth, height) = getArea(a,b) or getArea(anything, anything)
 
 console.log(area);
 
@@ -614,26 +614,43 @@ console.log(tlsNum.toLocaleString("ar-SA", {style: "currency", currency: "USD"})
 console.log(tlsNum.toLocaleString(undefined, {style: "percent"}));
 console.log(tlsNum.toLocaleString(undefined, {style: "unit", unit: "meter"}));
 
-//	------------------------	Number Guessing Game	-----------------------------------
+//	------------------------	Number Guessing Game 2.0	-----------------------------
 
-ggGuess.innerHTML = ggInput.value;
-document.getElementById("ggBtn").onclick = function(){
-	let answer = Math.floor(Math.random() * 9 + 1);
-	let ggReal = document.getElementById("ggReality");
-	ggReal.innerHTML = answer;
-	let ggGuess = document.getElementById("ggGuess");
-	let ggInput = document.getElementById("ggInput");
-	let ggWin = document.getElementById("ggWin");
-	let gw = Number(ggWin.innerHTML);
-	let ggLose = document.getElementById("ggLose");
-	let gl = Number(ggLose.innerHTML);
+let ggGuess = document.getElementById("ggGuess");
+let ggReal = document.getElementById("ggReality");
+let ggInput = document.getElementById("ggInput");
+let ggWin = document.getElementById("ggWin");
+let ggLose = document.getElementById("ggLose");
+
+document.getElementById("ggArrowUp").onclick = function(){
 	let giv = Number(ggInput.value);
-	ggGuess.innerHTML = ggInput.value;
-	if(answer > giv||answer < giv){
-		ggLose.innerHTML = gl + 1;
-		alert("You're guessed it")
+	ggInput.value = giv + 1;
+}
+
+document.getElementById("ggArrowDown").onclick = function(){
+	let giv = Number(ggInput.value);
+	ggInput.value = giv - 1;
+}
+
+document.getElementById("ggBtn").onclick = function(){
+	let giv = Number(ggInput.value);
+	let gw = Number(ggWin.innerHTML);
+	let gl = Number(ggLose.innerHTML);
+	if(giv < 1||giv > 9){
+		alert(`You must guess a number from 1 to 9, your "${ggInput.value}" will be changed to "0"`)
+		console.log(ggInput.value, giv);
 	}
 	else{
+		let answer = Math.floor(Math.random() * 9 + 1);
+		ggReal.innerHTML = answer;
+
+		if(answer > giv||answer < giv){
+		ggLose.innerHTML = gl + 1;
+		}
+		else{
 		ggWin.innerHTML = gw + 1;
+		alert("You're win!")
+		}
+		ggGuess.innerHTML = ggInput.value;
 	}
 }
