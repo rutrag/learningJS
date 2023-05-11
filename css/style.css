@@ -40,6 +40,14 @@ input[type=number] {
   max-width: 100%;
 }
 
+.margin0auto {
+  margin: 0 auto;
+}
+
+.flexgrow1 {
+  flex-grow: 1;
+}
+
 body {
   background: gray;
   color: wheat;
@@ -123,14 +131,15 @@ h2 {
   gap: 1rem;
   justify-content: space-between;
 }
+.describetext__row {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
 .describetext__container {
-  position: relative;
   display: flex;
   flex-direction: column;
   gap: 0.5em;
-}
-.describetext__container .button {
-  transform: translateX(100%);
 }
 .describetext label {
   align-self: center;
@@ -142,7 +151,7 @@ h2 {
   border-radius: 0.3em;
   box-shadow: -0.2em -0.2em 0.1em -0.1em rgb(73, 67, 54) inset;
   height: 1.5em;
-  padding: 0.5em;
+  padding: 0.25em;
   color: #6c4a11;
 }
 .describetext .input:active, .describetext .input:focus {
@@ -154,7 +163,7 @@ h2 {
   letter-spacing: 0.1em;
 }
 .describetext .input-number {
-  width: 2.6em;
+  width: 2.4em;
 }
 
 .inputblock {

@@ -21,7 +21,7 @@
 				<h2 class="describe__heading">2 step :<span class="thin">document.getElementById</span></h2>
 					<div class="describetext">
 						<div class="describetext__column describetext__column-ais">
-							<div class="describetext__block">
+							<div class="describetext__row">
 								<p class="text">let firstname = <span class="bold">"kitty"</span></p>
 								<strong class="text text-highlight"> "" for text</strong>
 							</div>
@@ -33,7 +33,7 @@
 					</div>
 					<div class="describetext">
 						<div class="describetext__column describetext__column-ais">
-							<div class="describetext__block">
+							<div class="describetext__row">
 								<p class="text">let age = <span class="bold">17</span></p>
 								<strong class="text text-highlight">no "" for number</strong>
 							</div>
@@ -45,7 +45,7 @@
 					</div>
 					<div class="describetext">
 						<div class="describetext__column describetext__column-ais">
-							<div class="describetext__block">
+							<div class="describetext__row">
 								<p class="text">let firstname = <span class="bold">"kitty"</span></p>
 								<strong class="text text-highlight">true or false</strong>
 							</div>
@@ -70,11 +70,11 @@
 					<h3 class="describe__subheading">let students = 10</h3>
 					<div class="describetext">
 						<div class="describetext__column describetext__column-ais">
-							<div class="describetext__block mw100">
+							<div class="describetext__row mw100">
 								<p class="text">JS code</p>
 								<p class="text text-highlight fs-small">getElementById(your id).innerHTML = "students =", students / 3;</p>
 							</div>
-							<div class="describetext__block mw100">
+							<div class="describetext__row mw100">
 								<p class="text">result</p>
 								<p class="text text-highlight" id="students1"></p>
 							</div>
@@ -82,11 +82,11 @@
 					</div>
 					<div class="describetext">
 						<div class="describetext__column describetext__column-ais">
-							<div class="describetext__block mw100">
+							<div class="describetext__row mw100">
 								<p class="text">JS code</p>
 								<p class="text text-highlight text fs-small">getElementById(your id).innerHTML = "extra = ", extrastudents % 3</p>
 							</div>
-							<div class="describetext__block mw100">
+							<div class="describetext__row mw100">
 								<p class="text">result</p>
 								<p class="text text-highlight" id="students2"></p>
 							</div>
@@ -171,14 +171,14 @@
 					<h2 class="describe__heading">curcamference calculator</h2>
 					<div class="describetext">
 						<div class="describetext__column">
-							<div class="describetext__block">
+							<div class="describetext__row">
 								<label for="radius">Radius:</label>
 									<input class="input input-number" type="number" id="radius">
 									<button class="button" type="button" id="circalcbutton">Enter</button>
 							</div>
 						</div>
 						<div class="describetext__column">
-							<div class="describetext__block">
+							<div class="describetext__row">
 								<p>Result:</p>
 								<div class="inputblock">
 									<p class="text" id="circumference"></p>
@@ -200,20 +200,20 @@
 						</div>
 						<div class="describetext__column">
 								<h4 class="mw100">Input a, b</h4>
-							<div class="describetext__block">
+							<div class="describetext__row">
 								<label for="sidea">a:</label>
 									<input class="input input-number" type="number" id="sidea">
 							</div>
-							<div class="describetext__block">
+							<div class="describetext__row">
 								<label for="radius">b:</label>
 									<input class="input input-number" type="number" id="sideb">
 							</div>
-							<div class="describetext__block">
+							<div class="describetext__row">
 								<button class="button" type="button" id="pifagorbutton">Enter</button>
 							</div>
 						</div>
 						<div class="describetext__column">
-							<div class="describetext__block">
+							<div class="describetext__row">
 								<p>Result:</p>
 								<div class="inputblock">
 									<p class="text" id="sidec"></p>
@@ -260,7 +260,7 @@
 					<h2 class="desribe__heading">Check your age group</h2>
 					<div class="describetext">
 						<div class="describetext__column describetext__column-fg0">
-							<div class="describetext__block">
+							<div class="describetext__row">
 								<label for="ageInput" id="ageLabel">Enter your age</label>
 								<input type="number" class="input input-number" id="ageInput">
 								<button class="button" id="ageBtn">check</button>
@@ -275,7 +275,7 @@
 					<h2 class="desribe__heading">Checked property</h2>
 					<div class="describetext">
 						<div class="describetext__column describetext__column-ais">
-							<div class="describetext__block gender">
+							<div class="describetext__row gender">
 								<p class="text">Select your gender</p>
 								<div class="gender__block">
 									<label for="mlGenderInput">male</label>
@@ -286,15 +286,15 @@
 									<input type="radio" name="gender" class="checkbox" id="traGenderInput">
 								</div>
 							</div>
-							<div class="describetext__block gender">
+							<div class="describetext__row gender">
 								<p class="text">You must agree to <a href="#">privacy policy</a></p>
 								<div class="gender__block">
 									<label for="agreeGender"> I agree</label>
 									<input type="checkbox" id="agreeGender">
 								</div>
 							</div>
-							<div class="describetext__block gender">
-								<button class="button" id="genderBtn">check</button>
+							<div class="describetext__row gender">
+								<button class="button margin0auto" id="genderBtn">check</button>
 								<p class="text" id="genderResult"></p>
 							</div>
 						</div>
@@ -308,16 +308,16 @@
 						<div class="describetext__column describetext__column-ais">
 							<div class="describetext__block mw100">
 								<div class="describetext__container">
-									<div class="describetext__block">
+									<div class="describetext__row">
 										<label for="rectangleColumnInput">Enter columns</label>
 										<input type="number" class="input input-number" id="rectangleColumnInput" placeholder="<41">
 									</div>
-									<div class="describetext__block">
+									<div class="describetext__row">
 										<label for="rectangleRowInput">Enter rows</label>
 										<input type="number" class="input input-number" id="rectangleRowInput" placeholder="<41">
 									</div>
-									<div class="describetext__block">
-										<button class="button" id="rectangleBtn">enter</button>
+									<div class="describetext__row">
+										<button class="button margin0auto" id="rectangleBtn">enter</button>
 									</div>
 								</div>
 								<div class="describetext__container">
@@ -335,36 +335,65 @@
 						<div class="describetext__column describetext__column-ais">
 							<div class="describetext__block mw100">
 								<div class="describetext__container ggame">
-									<div class="describetext__block inputblock mw100">
+									<div class="describetext__row inputblock mw100">
 										<label for="ggInput">Your number</label>
 										<input type="number" class="input input-number" id="ggInput" placeholder="<10">
 										<button type="button" class="arrow arrow-up" id="ggArrowUp"></button>
 										<button type="button" class="arrow arrow-down" id="ggArrowDown"></button>
 									</div>
-									<div class="describetext__block">
-										<button class="button" id="ggBtn">enter</button>
+									<div class="describetext__row">
+										<button class="button margin0auto" id="ggBtn">enter</button>
 									</div>
 								</div>
 								<div class="describetext__container">
-									<div class="describetext__block">
+									<div class="describetext__row">
 										<p>guess</p>
 										<p class="output" id="ggGuess">.</p>
 									</div>
-									<div class="describetext__block">
+									<div class="describetext__row">
 										<p>reality: </p>
 										<p class="output" id="ggReality">.</p>
 									</div>
 								</div>
 								<div class="describetext__container">
-									<div class="describetext__block">
-										<label for="ggWin">win</label>
+									<div class="describetext__row">
+										<p>win</p>
 										<p class="output" id="ggWin">0</p>
 									</div>
-									<div class="describetext__block">
+									<div class="describetext__row">
 										<p>lose</p>
 										<p class="output" id="ggLose">0</p>
 									</div>
 								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="block">
+				<div class="describe">
+					<h2 class="desribe__heading">Temperature converter</h2>
+					<div class="describetext">
+						<div class="describetext__column describetext__column-fg0 margin0auto">
+							<div class="describetext__row mw100">
+								<label for="tcInput">Enter a temperature</label>
+								<input type="number" class="input input-number" id="tcInput" placeholder="<10">
+								<button type="button" class="arrow arrow-up" id="tcArrowUp"></button>
+								<button type="button" class="arrow arrow-down" id="tcArrowDown"></button>
+							</div>
+							<div class="describetext__row mw100">
+								<div class="temp__block">
+									<input type="radio" name="temperature" id="tcCelsInput" class="checkbox">
+									<label for="tcCelsInput">Celsius</label>
+								</div>
+								<div class="temp__block">
+									<input type="radio" name="temperature" id="tcCelsInput" class="checkbox">
+									<label for="tcCelsInput">Fahrenheit</label>
+								</div>
+							</div>
+							<div class="describetext__row mw100">
+								<button class="button" id="tcBtn">enter</button>
+								<p id=""></p>
 							</div>
 						</div>
 					</div>

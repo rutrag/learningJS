@@ -34,6 +34,12 @@ input[type=number] {
 .maxw100 {
 	max-width: 100%;
 }
+.margin0auto {
+	margin: 0 auto;
+}
+.flexgrow1 {
+	flex-grow: 1;
+}
 
 // This text needs
 
@@ -42,7 +48,7 @@ body {
 	color: wheat;
 }
 .container {
-	margin:  1rem
+	margin: 1rem;
 }
 .block {
 	margin-bottom: 2em;
@@ -119,14 +125,15 @@ h2 {
 		gap: 1rem;
 		justify-content: space-between;
 	}
+	&__row {
+		display: flex;
+		gap: 1rem;
+		justify-content: space-between;
+	}
 	&__container {
-		position: relative;
 		display: flex;
 		flex-direction: column;
 		gap: 0.5em;
-		.button {
-			transform: translateX(100%);
-		}
 	}
 	label {
 		align-self: center;
@@ -138,7 +145,7 @@ h2 {
 		border-radius: 0.3em;
 		box-shadow: -0.2em -0.2em 0.1em -0.1em rgb(73, 67, 54) inset;
 		height: 1.5em;
-		padding: 0.5em;
+		padding: 0.25em;
 		color: #6c4a11;
 		&:active, &:focus {
 		background: rgb(209, 194, 169);
@@ -150,7 +157,7 @@ h2 {
 		letter-spacing: 0.1em;
 	}
 	.input-number {
-		width: 2.6em;
+		width: 2.4em;
 	}
 }
 .inputblock {
