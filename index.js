@@ -536,13 +536,13 @@ function heroNameCons(a, b){
 //	-Return statement - returns a value back to the place where you invoked function	--
 
 
-let area = getArea(a,b);  // getArea(wigth, height) = getArea(a,b) or getArea(anything, anything)
+let area = getArea(3,3);
 
 console.log(area);
 
 function getArea(width, height){
 	width = 4;
-	height = 3;
+	height = Number(height);
 	return width * height;
 }
 
@@ -653,4 +653,38 @@ document.getElementById("ggBtn").onclick = function(){
 		}
 		ggGuess.innerHTML = ggInput.value;
 	}
+}
+
+//	------------------------	Temperature converter	-----------------------------
+
+const tcInput = document.getElementById("tcInput");
+const tcCelsInput = document.getElementById("tcCelsInput");
+const tcFarhInput = document.getElementById("tcFarhInput");
+const tcOutput = document.getElementById("tcOutput");
+
+document.getElementById("tcBtn").onclick = function () {
+
+	function cels(temp, degree) {
+		temp = (tcInput.value - 32) * 5 / 9;
+		degree = "°";
+		return temp + degree;
+	}
+	function farh(temp, degree) {
+		temp = (tcInput.value * 9 / 5) + 32;
+		degree = String(degree);
+		return temp + degree;
+	}
+	if (tcCelsInput.checked){
+		tcOutput.innerHTML = cels() + "C";
+	}
+	else if (tcFarhInput.checked){
+		tcOutput.innerHTML =  farh(c,"°") + "F";
+	}
+	else{
+		tcOutput.innerHTML = "Select a temperatute"
+	}
+}
+
+function name(params) {
+	
 }
