@@ -685,6 +685,34 @@ document.getElementById("tcBtn").onclick = function () {
 	}
 }
 
-function name(params) {
-	
-}
+//	------	Array - special variable, which can hold more than one value	-------
+
+const countries = ["USA", "Germany", "China", "Japan", "Russia", "UK", "Singapore", "France", "India", "South Korea", "Brazil", "Italy", "Kanada"];
+console.log(countries);
+// countries = "anything" - leads to an error
+
+countries[5] = "Great Britain"; // change 6th array value
+console.log(countries);
+
+countries.pop();			// remove last item
+console.log(countries);
+
+countries.push("Thailand") // add an element to array
+console.log(countries);
+
+countries.shift() // remove an element from beggining
+console.log(countries);
+
+countries.unshift("1") // add an element to beginning
+console.log(countries);
+
+countries.splice(6, 3, "USA", "Russia")  //at possition 7 remove 3 values and add "USA", "Russia" elements instead
+console.log(countries);
+
+countries.sort();		// sort counties array alphabetically
+console.log(countries);
+
+let lengthCount = countries.length;
+let indexCount = countries.indexOf("1");
+console.log(lengthCount, indexCount);
+
