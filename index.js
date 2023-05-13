@@ -311,9 +311,10 @@ fullName.slice(0, fullName.indexOf(" ")));
 fullName.slice(fullName.lastIndexOf(" ") + 1));
 
 
-//	------------------	Chaining metod		=	calling one metod after another	--------
+//	------------------	Chaining method		=	calling one method after another	--------
 let hi = "hi there";
-							console.log("hi = ", hi);
+console.log("hi = ", hi);
+
 console.log(
 	hi.slice(
 		hi.charAt(0), hi.indexOf(" ")
@@ -567,15 +568,21 @@ function checkWinner(win){
 }
 
 //	---------------------------------	var vs let	-----------------------------------
-//	let - variables are limited to block scope {}
+//	let - variables are limited to block scope {} scope - (область видимости)
 //	var - variables are limited to a function(){}
 
 //	global variables is declared outside any function
 // but var will CHANGE browser's window properties instead of let
 // window properties can be seen in browser's console -> window
 
+let globalScope			// Global scope
+
+function xxxFunction(){
+	let blockScope
+}
+
 for(let i = 33; i < 39; i+=2){
-	console.log("let into 'for{i}': ", i)
+	console.log("let into 'for{i}': ", i)		
 }
 console.log("let out of 'for{}i': leads to undefined i");
 
