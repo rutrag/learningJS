@@ -567,9 +567,9 @@ function checkWinner(win){
 	win ? console.log("You win!") : console.log("You Lose;")
 }
 
-//	---------------------------------	var vs let	-----------------------------------
+//	-----------	var vs let	---	block vs functon scope	-----------------------------
 //	let - variables are limited to block scope {} scope - (область видимости)
-//	var - variables are limited to a function(){}
+//	var - variables are limited to a function scope(){}
 
 //	global variables is declared outside any function
 // but var will CHANGE browser's window properties instead of let
@@ -577,23 +577,22 @@ function checkWinner(win){
 
 let globalScope			// Global scope
 
-function xxxFunction(){
-	let blockScope
-}
 
-for(let i = 33; i < 39; i+=2){
-	console.log("let into 'for{i}': ", i)		
+for(let i = 33; i < 39; i+=2){				//block scope
+	console.log("let into 'for{i}': ", i)	//block scope
 }
-console.log("let out of 'for{}i': leads to undefined i");
+console.log("let out of 'for{}i': leads to undefined i"); //out of block scope
 
 doSmth()
+
+//start function scope
 function doSmth(){
-	for(var i = 33; i < 39; i+=2){
-		console.log("var into for'function(){for{i}}': ", i)
-	}
-	console.log("var into function 'funtion(){for{}i}': ", i);
-}
-console.log("var out of function'for{}i': leads to undefined i");
+	for(var i = 33; i < 39; i+=2){									//block scope	function scope
+		console.log("var into for'function(){for{i}}': ", i)	//block scope	function scope
+	}																			//block scope	function scope
+	console.log("var into function 'funtion(){for{}i}': ", i);				//	function scope
+}																								//	function scope
+console.log("var out of function'for{}i': leads to undefined i");	//out of block and function scope
 
 //	------	template literals(strings) - delimited with backtick (`)	-----------------
 //	------	allows embedded expressions and tagged templates ($)	--------------------
